@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "code-pretty-snap"
+version = "0.1.0"
+description = "Generate beautiful code screenshots in your terminal"
+requires-python = ">=3.10"
+dependencies = [
+    "Pillow>=10.0",
+    "Pygments>=2.15",
+]
+
+[project.scripts]
+code-pretty-snap = "code_pretty_snap.cli:main"
